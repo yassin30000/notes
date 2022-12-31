@@ -1,0 +1,62 @@
+// FOR EACH
+    // executes a provided function once for each element in array
+
+    // SYNTAX
+    let Array = [];
+    Array.forEach(function (element, index, array){});
+
+    // EXAMPLE: log all elements in array
+    let arr1 = [1,2,3,4,5];
+
+    arr1.forEach(function(el){
+        console.log(el); // => 1 2 3 4 5
+    });
+
+// ARRAY MAP
+    // calls afunction on every element in an array in order to populate a new array
+
+    // SYNTAX
+    Array.map(function(element, index, array){});
+
+    // EXAMPLE: return new array with all elements uppercased
+    let arr2 = ['hello', 'mom', 'whats', 'up'];
+
+    let newArr2 = arr2.map(function(el){
+        return el.toUpperCase();
+    });
+
+    console.log(newArr2); // => [ 'HELLO', 'MOM', 'WHATS', 'UP' ]
+
+// ARRAY FILTER
+    // returns smaller array that has been filtered thru a function
+    // callback function needs to returns a boolean
+
+    // SYNTAX
+    Array.filter(function(element, index, array){});
+
+    // EXAMPLE: return new array woth words that have a 'o'
+    let arr3 = ['hello', 'mom', 'whats', 'up'];
+
+    let newArr3 = arr3.filter(function(el){
+        return el.includes('o');
+    });
+    console.log(newArr3); // => [ 'hello', 'mom' ]
+
+// ARRAY REDUCE
+    // reduces an array to a single value given the callback function
+
+    // SYNTAX
+    // Array.reduce(function(accumulator, currentValue){}, initialValue);
+    // accumulator: this variable stays consistent, stuff is done to this variable and then it is returned
+    // currentValue: which element of the array the method is one currently
+    // initialValue: the first value that you want the method to start on
+
+    // EXAMPLE: return sum of all elements in array
+    arr4 = [2, 4, 6, 2, 8];
+    
+    let newArr4 = arr4.reduce(function(acc, el){
+        return acc + el; 
+    });
+
+    console.log(newArr4); // => 22
+
