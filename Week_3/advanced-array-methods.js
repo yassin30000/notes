@@ -46,7 +46,7 @@
     // reduces an array to a single value given the callback function
 
     // SYNTAX
-    // Array.reduce(function(accumulator, currentValue){}, initialValue);
+    Array.reduce(function(accumulator, currentValue){}, initialValue);
     // accumulator: this variable stays consistent, stuff is done to this variable and then it is returned
     // currentValue: which element of the array the method is one currently
     // initialValue: the first value that you want the method to start on
@@ -60,3 +60,9 @@
 
     console.log(newArr4); // => 22
 
+// ARRAY FIND
+    // The find() method returns the first element in the provided array that satisfies the provided testing function. 
+    // If no values satisfy the testing function, undefined is returned.
+
+    // SYNTAX
+    Array.find(function(element, index, array){});
