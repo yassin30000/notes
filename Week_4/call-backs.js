@@ -39,5 +39,5 @@
         return num * 3;
     }
 
-    console.log(sum(2, 4, double)); // => 12
-    console.log(sum(3, 6, tripler)); // => 27
+    console.log(sum(2, 4, double)); // => 12 (2 + 4 = 6 * 2 = 12)
+    console.log(sum(3, 6, tripler)); // => 27 (3 + 6 = 9 * 3 = 27)
