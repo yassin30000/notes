@@ -2,6 +2,8 @@
     // used in place of if else statement
     // can only have single expressions
 
+    // ternart operators implicitly return
+
 // SYNTAX
 
     // condition ? (if true do this) : (else, do this);
