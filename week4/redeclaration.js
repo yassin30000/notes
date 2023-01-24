@@ -19,5 +19,6 @@
         let dog = 'idk';
         console.log(dog);
     }
+
     sayDog(); // => idk
     console.log(dog); // => haru

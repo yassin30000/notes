@@ -15,7 +15,7 @@
 
         test(); // => undefined
 
-        // LET
+        // LET AND CONST
         // same as var, but gives you error, telling you whats actually wrong
         function test2() {
             console.log(hoistedLet);

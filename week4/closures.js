@@ -10,7 +10,7 @@
 
     function climbTree(treeType) { // outer function
 
-        let treeString = 'I climbed a ';
+        let treeString = 'I climbed a(n) ';
 
         function sayClimbTree() { // inner function (this is a closure)
             return treeString + treeType; // using variable from outer function 'climbTree'(called 'capturing')
@@ -44,7 +44,7 @@
     // closures dont need params, because anything used inside, is auto added as a parameter
 
     function climbTree2(treeType) {
-        let treeString = 'I climbed a ';
+        let treeString = 'I climbed a(n) ';
 
         function sayClimbTree2() { // implicitly adding treeString and treeType params automatically
             return treeString + treeType;
