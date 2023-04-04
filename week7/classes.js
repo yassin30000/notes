@@ -68,7 +68,7 @@
     // example
 
     class Dog extends Animal {
-        constructor(name) {
+        constructor(name, age) {
             super(name, age, 'Dog', 'Woof')
         }
     }
